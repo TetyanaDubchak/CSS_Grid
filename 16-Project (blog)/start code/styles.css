@@ -83,6 +83,18 @@
   font-family: var(--common-font);
 }
 
+.blog {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 48px;
+}
+
+@media (min-width: 768px) {
+  .blog{
+    row-gap: 36px;
+  }
+}
+
 .blog-link {
   color: var(--common-black);
 }

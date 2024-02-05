@@ -119,6 +119,14 @@
   letter-spacing: 0.5px;
 }
 
+.socials-list{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 24px;
+  column-gap: 8px;
+
+}
+
 .socials-title {
   color: var(--grey, #2c2c2c);
   font-family: var(--common-font);
@@ -132,6 +140,27 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.5px;
+
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 32px 67px;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .social-link{
+    gap: 105px;
+  }
+
+  .socials-list {
+    column-gap: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .social-link {
+      gap: 28px;
+    }
 }
 
 .socials-item:nth-child(1) .social-link {
