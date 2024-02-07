@@ -89,14 +89,23 @@
   row-gap: 48px;
 }
 
+.blog-link {
+  display: grid;
+  gap: 20px;
+
+  color: var(--common-black);
+}
+
+
 @media (min-width: 768px) {
   .blog{
     row-gap: 36px;
   }
-}
 
-.blog-link {
-  color: var(--common-black);
+  .blog-link{
+    gap: 24px;
+    grid-template-columns: 264px 1fr;
+  }
 }
 
 .blog-title {
